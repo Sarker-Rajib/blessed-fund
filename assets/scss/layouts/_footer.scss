@@ -1,0 +1,81 @@
+.footer {
+   padding: 50px 0 30px;
+   background: url(../images/home/footer-bg.png) no-repeat top center/cover;
+
+   .footer-button {
+      font-family: 'centuryGothicReg';
+      font-size: 90px;
+      color: #fff;
+      background: linear-gradient(0deg, rgb(3, 108, 142) 0%, rgb(5, 59, 94) 100%);
+      box-shadow: 0px 0px 10px 3px rgb(0 0 0 / 30%);
+      margin: 10px;
+      padding: 10px;
+      transition: all 0.3s ease-in-out;
+      display: inline-block;
+      min-width: 300px;
+
+      @media screen and (max-width: 1399px) {
+         font-size: 60px;
+         min-width: 300px;
+      }
+
+      @media screen and (max-width: 991px) {
+         font-size: 35px;
+         min-width: 300px;
+      }
+
+      &:hover {
+         background: #fff;
+         color: #12549d;
+      }
+   }
+
+   .image-logo {
+      padding-top: 50px;
+
+      img {
+         width: 100%;
+         max-width: 750px;
+      }
+   }
+
+   .footer-nav {
+      padding-top: 50px;
+
+      p {
+         font-family: 'centuryGothicReg';
+         font-size: 30px;
+
+         @media screen and (max-width: 1399px) {
+            font-size: 20px;
+         }
+
+         @media screen and (max-width: 991px) {
+            font-size: 15px;
+         }
+      }
+
+      .footer-links {
+         .nav-link {
+            font-family: 'centuryGothicReg';
+            font-size: 30px;
+            color: #fff;
+            white-space: nowrap;
+
+            @media screen and (max-width: 1399px) {
+               font-size: 20px;
+            }
+
+            @media screen and (max-width: 991px) {
+               font-size: 15px;
+               padding: 6px;
+            }
+
+            &:hover {
+               background: #fff;
+               color: #12549d;
+            }
+         }
+      }
+   }
+}

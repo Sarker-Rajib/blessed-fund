@@ -1,0 +1,49 @@
+.welcome-blessed-fund {
+   background: url(../images/home/ba-bg.png) no-repeat top right/cover;
+   padding-top: 200px;
+   padding-bottom: 120px;
+   
+   @media(max-width: 767px) {
+      padding-top: 50px;
+      padding-bottom: 20px;
+   }
+
+   @media(max-width: 991px) {
+      padding-top: 80px;
+      padding-bottom: 50px;
+   }
+
+   .section-heading {
+      font-family: 'centuryGothicReg';
+      font-size: 36px;
+      color: #ffffff;
+      text-align: center;
+      padding-bottom: 10px;
+
+      @media(max-width: 768px) {
+         font-size: 22px;
+      }
+   }
+
+   .top-para {
+      font-family: 'centuryGothicReg';
+      font-size: 22px;
+      color: #ffffff;
+
+      @media(max-width: 768px) {
+         font-size: 16px;
+      }
+   }
+
+   .bottom-para {
+      font-family: 'centuryGothicReg';
+      font-size: 26px;
+      color: #ffffff;
+      text-align: center;
+
+      @media(max-width: 768px) {
+         font-size: 18px;
+         padding-bottom: 20px;
+      }
+   }
+}

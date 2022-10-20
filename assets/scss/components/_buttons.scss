@@ -1,0 +1,54 @@
+.btn-blue {
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 500;
+   font-size: 26px;
+   color: #fff;
+   background: #00a2ff;
+   padding: 0 20px;
+   margin-top: 5px;
+   border-radius: 0;
+
+   @media screen and (max-width: 1399px) {
+      font-size: 20px;
+   }
+
+   @media screen and (max-width: 575px) {
+      font-size: 16px;
+   }
+}
+
+.button-groups {
+   .button-parent {
+      // background: rgb(54,4,70);
+      background: linear-gradient(90deg, #0e63c3 0%, #fdfcfd 50%, #0e63c3 100%);
+      padding: 5px;
+
+      @media screen and (max-width: 991px) {
+         padding: 3px;
+      }
+
+      .btn-transactions {
+         color: $color-black;
+         background: linear-gradient(90deg, #fff 0%, #fff 50%, #fff 100%);
+         font-family: 'TahomaBold';
+         font-size: 24px;
+         border-radius: 0;
+         padding: 15px 10px;
+         width: 100%;
+         display: block;
+
+         &:hover {
+            background: linear-gradient(90deg, #0c56a9 0%, #0e63c3 50%, #0c56a9 100%);
+            color: #fff;
+         }
+
+         @media screen and (max-width: 1399px) {
+            font-size: 20px;
+         }
+
+         @media screen and (max-width: 991px) {
+            font-size: 16px;
+         }
+      }
+   }
+}

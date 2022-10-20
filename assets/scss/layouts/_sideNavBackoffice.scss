@@ -1,0 +1,51 @@
+.sideNav {
+   background: $color-black;
+   width: 280px;
+   height: 100vh;
+   padding-top: 93px;
+   overflow: auto;
+   position: sticky;
+   top: 0;
+   z-index: 999;
+   transition: all 0.1s linear;
+
+   @media screen and (max-width: 1199px) {
+      position: fixed;
+      overflow: hidden;
+      width: 0;
+   }
+
+
+   .body-content {
+      ul {
+         padding-top: 25px;
+
+         li {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 22px;
+            font-weight: 400;
+            padding-bottom: 20px;
+
+            @media (max-width: 1399px) {
+               font-size: 18px;
+               padding-bottom: 15px;
+            }
+
+            a {
+               display: block;
+               padding: 5px;
+               color: #ffffff;
+
+               &:hover {
+                  background: $color-white;
+                  color: $color-black;
+
+                  img {
+                     filter: invert(1);
+                  }
+               }
+            }
+         }
+      }
+   }
+}

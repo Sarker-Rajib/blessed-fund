@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Back Office</title>
+  <link rel='shortcut icon' href='assets/images/homepage-image/logo.png' type='image/x-icon'>
+  <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="back-office">
+  <!-- header -->
+  <header class="header fixed-top py-1 backoffice-header shadow-sm">
+    <div class="container-fluid">
+      <div class="header-content d-flex align-items-center mx-0 mx-xl-4">
+        <img class="img-fluid brand-logo" src="assets/images/backoffice/logo-sm.png" alt="logo">
+        <h1 class="text-center heading d-xl-block d-none mx-auto">WELCOME - &lt;NAME HERE&gt;
+        </h1>
+        <div class="d-xl-none d-flex align-items-center ms-auto">
+          <i class="far fa-bars fs-1 pe-3 d-xl-none" id="side-nav-toggle" onclick="sideNavToogle();"></i>
+          <a href="#"><img class="img-fluid profile-image" src="assets/images/backoffice/avatar.png" alt="avatar"></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header -->
+
+  <div class="d-flex position-relative">
+    <!-- sidenav starts here -->
+    <aside class="sideNav">
+      <div class="body-content">
+        <h3 class="user-name fw-bold text-white fs-4 p-4 pb-0 d-xl-none">YOUR NAME</h3>
+        <ul class="ps-0">
+          <li><a href="#"><img width="27" class="ms-3 me-2" src="assets/images/backoffice/favicons/dashboard.png" alt="favicon"> Dashboard</a></li>
+          <li><a href="#"><img width="27" class="ms-3 me-2" src="assets/images/backoffice/favicons/deposit.png" alt="favicon"> Deposit</a></li>
+          <li><a href="#"><img width="27" class="ms-3 me-2" src="assets/images/backoffice/favicons/deposit.png" alt="favicon"> Activate Position</a></li>
+          <li><a href="#"><img width="27" class="ms-3 me-2" src="assets/images/backoffice/favicons/stats.png" alt="favicon"> Stats</a></li>
+          <li><a href="#"><img width="27" class="ms-3 me-2" src="assets/images/backoffice/favicons/boards.png" alt="favicon"> Your Boards</a></li>
+          <li><a href="#"><img width="27" class="ms-3 me-2" src="assets/images/backoffice/favicons/deposit.png" alt="favicon"> Withdraw</a></li>
+          <li><a href="#"><img width="27" class="ms-3 me-2" src="assets/images/backoffice/favicons/icons8-web-advertising-24.png" alt="favicon"> Promo Ads</a></li>
+          <li><a href="#"><img width="27" class="ms-3 me-2" src="assets/images/backoffice/favicons/bounce.png" alt="favicon"> Bonuses</a></li>
+          <li><a href="#"><img width="27" class="ms-3 me-2" src="assets/images/backoffice/favicons/profile.png" alt="favicon"> Edit Profile</a></li>
+          <li><a href="#"><img width="27" class="ms-3 me-2" src="assets/images/backoffice/favicons/power.png" alt="favicon"> Logout</a></li>
+        </ul>
+      </div>
+
+    </aside>
+    <!-- sidenav ended here -->
+
+    <!-- all inner contents goes here -->
+    <main class="main-body">
+      <div class="container-fluid px-4">
+        <div class="row align-items-center">
+          <div class="col-xl-4 order-xl-1 order-2 mt-xl-0 mt-4 mb-xl-0 mb-5">
+            <div class="button-groups row gy-4 justify-content-between">
+              <div class="col-md-12">
+                <div class="button-parent">
+                  <a href="#" class="btn btn-transactions">1. MAKE DEPOSIT</a>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="button-parent">
+                  <a href="#" class="btn btn-transactions">2. ACTIVATE POSITION</a>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="button-parent">
+                  <a href="#" class="btn btn-transactions">3. WITHDRAW</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-8 mt-xl-0 mt-2 order-xl-2 order-1">
+            <div class="backoffice-video-section mb-4">
+              <h2>WATCH VIDEOS BELOW TO GET STARTED</h2>
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/G5RpJwCJDqc" allow="autoplay; " allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="refferral-link mb-4 p-2">
+          <div class="content-body align-items-center justify-content-between">
+            <div class="row">
+              <div class="col-md-9">
+                <div class="d-flex p-0 align-items-center">
+                  <img class="img-fluid" src="assets/images/backoffice/link-icon-png-14.png" width="50" alt="link-icon">
+                  <p class="d-flex align-items-center w-100 text-nowrap"><em><span class="d-md-inline d-none pe-2">SHAREABLE</span> REFERRAL LINK -</em>
+                    <input type="text" value="https://www.google.com/" id="link-input" class="bg-transparent border-0 text-white fs-6 ms-4 w-100" readonly>
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3 text-center text-md-end">
+                <button class="btn btn-blue text-nowrap" onclick="copyLink();">Copy Link</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="economy mb-4">
+          <div class="row g-md-4 g-3">
+            <div class="col-xl-3 col-6">
+              <div class="reward h-100">
+                <h6>$0.00</h6>
+                <p>Total Rewards Earned</p>
+              </div>
+            </div>
+            <div class="col-xl-3 col-6">
+              <div class="reward-date h-100">
+                <h6>0</h6>
+                <p>Positions</p>
+              </div>
+            </div>
+            <div class="col-xl-3 col-6">
+              <div class="Referral h-100">
+                <h6>0</h6>
+                <p>Total Referrals</p>
+              </div>
+            </div>
+            <div class="col-xl-3 col-6">
+              <div class="Balance h-100">
+                <h6>$0.00</h6>
+                <p>Account Balance</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="spnsor-n-profile">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="sponsor-details-parent">
+                <div class="sponsor-details">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="text">
+                        <h2><em>YOUR SPONSOR</em></h2>
+                        <p class="name">Name: &lt;name &gt;</p>
+                        <p class="username">Username: &lt; username &gt;</p>
+                        <p class="email">Email: &lt;email &gt;</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0">
+              <div class="person-details-parent">
+                <div class="person-details">
+                  <div class="row align-items-end">
+                    <div class="col-md-8 col-12">
+                      <div class="text">
+                        <h2><em>YOUR PROFILE</em></h2>
+                        <p class="name">Name: &lt;name &gt;</p>
+                        <p class="username">Username: &lt; username &gt;</p>
+                        <p class="email">Email: &lt;email &gt;</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 text-end mt-md-0 mt-1">
+                      <a href="#" class="btn btn-blue text-nowrap">Edit Profile</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="brand-container text-center p-5">
+          <img src="assets/images/backoffice/logo-lg.png" alt="logo" class="img-fluid w-75 mx-auto">
+        </div>
+
+
+
+        <footer class="backoffice-footer pb-5">
+          <p class="footer-copyright text-center text-black fs-4"> © 2022 Blessed-Funds. All Rights Reserved</p>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+
+  <!-- script -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

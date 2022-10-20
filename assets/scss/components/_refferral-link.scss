@@ -1,0 +1,18 @@
+.refferral-link {
+   background: $color-tilt;
+
+   p {
+      font-family: 'TahomaBold';
+      font-size: 24px;
+      color: #fff;
+      padding-left: 15px;
+
+      @media screen and (max-width: 1399px) {
+         font-size: 20px;
+      }
+
+      @media screen and (max-width: 767px) {
+         font-size: 16px;
+      }
+   }
+}

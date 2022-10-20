@@ -1,0 +1,12 @@
+.home-banner{
+   background: url(../images/home/banner-bg.png) no-repeat bottom center/cover;
+   padding: 20px 0 100px;
+
+   @media(min-width: 1400px){
+      padding-bottom: 150px;
+   }
+
+   @media(max-width: 400px){
+      padding-bottom: 60px;
+   }
+}

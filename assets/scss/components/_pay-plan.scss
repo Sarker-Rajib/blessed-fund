@@ -1,0 +1,97 @@
+.our-pay-plan {
+   background: url(../images/home/pay-bg-1.png) no-repeat top center/cover;
+   padding-top: 50px;
+
+   @media(max-width: 768px) {
+      padding-top: 20px;
+   }
+
+   .section-heading {
+      font-family: 'centuryGothicReg';
+      font-size: 70px;
+      color: #000000;
+      text-align: center;
+      padding-bottom: 30px;
+
+      @media(max-width: 1400) {
+         font-size: 55px;
+      }
+
+      @media(max-width: 991px) {
+         font-size: 42px;
+      }
+
+      @media(max-width: 767px) {
+         font-size: 22px;
+         padding-top: 20px;
+         padding-bottom: 10px;
+      }
+   }
+
+   .activate {
+      background: url(../images/home/pay-bg-2.png) no-repeat bottom center/cover;
+      padding-top: 30px;
+
+      .item-header {
+         font-family: 'centuryGothicReg';
+         font-size: 65px;
+         color: #000000;
+         text-align: center;
+         padding-bottom: 30px;
+
+         @media(max-width: 1400) {
+            font-size: 55px;
+         }
+
+         @media(max-width: 991px) {
+            font-size: 42px;
+         }
+
+         @media(max-width: 767px) {
+            font-size: 22px;
+            padding-bottom: 10px;
+         }
+      }
+
+      .card-icon {
+         max-width: 190px;
+
+         @media(max-width: 991px) {
+            max-width: 150px;
+         }
+      }
+
+      .item-details {
+         font-family: 'centuryGothicReg';
+         font-size: 30px;
+         color: #000000;
+         text-align: center;
+         padding-bottom: 30px;
+
+         @media(max-width: 991px) {
+            font-size: 20px;
+         }
+
+         @media(max-width: 767px) {
+            font-size: 16px;
+         }
+      }
+
+      .team-text {
+         font-family: 'centuryGothicReg';
+         font-size: 45px;
+         color: #000000;
+         text-align: center;
+         padding: 30px 0;
+
+         @media(max-width: 991px) {
+            font-size: 24px;
+         }
+
+         @media(max-width: 767px) {
+            font-size: 18px;
+            padding: 15px 0;
+         }
+      }
+   }
+}
